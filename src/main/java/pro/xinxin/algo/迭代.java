@@ -1,4 +1,41 @@
 package pro.xinxin.algo;
 
+/**
+ * 本类用于学习迭代
+ * https://www.hello-algo.com/chapter_computational_complexity/iteration_and_recursion/
+ */
 public class 迭代 {
+    /**
+     * for循环
+     * 求和1+2+3+...+n
+     */
+    public static int sumFor(int num){
+        int sum=0;
+        for (int i = 1; i <= num; i++) {
+            sum+=i;
+        }
+        return sum;
+    }
+
+    /**
+     * while循环
+     * 求和1+2+3+...+n
+     */
+    public static int sumWhile(int num){
+        int sum=0;
+        int i=1;
+        while (i<=num){
+            sum+=i;
+            i++;
+        }
+        return sum;
+    }
+
+    /**
+     * main方法，用于测试
+     */
+    public static void main(String[] args) {
+        System.out.println(sumFor(10));
+        System.out.println(sumWhile(100));
+    }
 }
